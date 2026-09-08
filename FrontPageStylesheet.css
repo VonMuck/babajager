@@ -1,0 +1,45 @@
+#bio{
+width:33%;
+min-height:170px;
+background:#9FE2BF; /* Seafoam Green */
+border-radius:5px;
+border:3px solid #dda0dd; /*Plum*/
+margin:1%;
+}
+
+#profilPic{
+position:relative;
+float:left;
+max-width:150px;
+border-radius:50%;
+margin:2%;
+}
+
+#imageRandomizer{
+background:#9FE2BF; /* Seafoam Green */
+height:400px;
+width:400px;
+border-radius:5px;
+border:3px solid #dda0dd; /*Plum*/
+padding:2%;
+}
+
+#disclaimer{
+display:block;
+background:white;
+height:350px;
+width:350px;
+border-radius:5px;
+border:3px solid #dda0dd; /*Plum*/
+text-align:center;
+cursor:pointer;
+}
+
+#randomImage{
+display:none;
+cursor:pointer;
+height:350px;
+width:350px;
+border-radius:5px;
+border:3px solid #dda0dd; /*Plum*/
+}
