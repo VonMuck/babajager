@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>BaBaJaGeR</title>
+<head>
+  <link rel="stylesheet" href="DarkTheme_BBJG.css">
+</head>
+
+<body>
+  <section class="homePageGrid"> <!-- Whole page section (3 columns 20 60 20) -->
+
+
+  
+<header>
+  <center><a href="./BabaJager.html"><img class="HeaderImage" src="./FrontPageVisu/Header_BBJG.png" alt="Header image"></a></center>
+</header>
+
+<!-- div containing everything in the left sidebar -->
+<aside class="leftSidebar">
+<!-- Menu buttons -->
+<nav>
+  <button class="navButton" onclick="document.location='./Zine/BabaJagaZine.html'">Zines</button>
+  <button class="navButton" onclick="document.location='./WorldWideWeeb/WorldWideWeeb.html'">World Wide Weeb</button>
+  <button class="navButton">Unipopcorn</button>
+  <button class="navButton" onclick="document.location='./Diary/Diary.html'">Diary</button>
+  <button class="navButton" onclick="document.location='./MtG/MtG.html'">MtG</button>
+</nav>
+
+</aside> <!-- left Sidebar closing-->
+
+<div class="mainContent"> <!-- Main content opening (1 columns) -->
+  
+  <div id="imageRandomizer">
+    <div id="disclaimer" onclick="displayRandomImage();setInterval(srcRandomizer, 60);">Warning ! <br> By clicking this you'll start fast flashing images
+    </div>
+      <img id="randomImage" alt="Random image from the internet"  src="./Zine/123img/1.jpg">
+      <div id="randomImageButtonBox">
+        <div class="randomImageButton" onclick="clearInterval(srcRandomizer);"></div>
+        <div class="randomImageButton" onclick="setInterval(srcRandomizer, 60);"></div>
+      </div>
+  </div> <!-- Image randomizer closing -->
+
+</div> <!--Main content closing -->
+
+<!-- div containing everything in the right sidebar -->
+<aside class="rightSidebar">
+
+<grid class="bannerDB">
+  <a target="_blank" href="https://manon-chouette.neocities.org" ><img alt="Manon Chouette" src="https://manon-chouette.neocities.org/manon-chouette-button.png"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://blamensir.neocities.org"><img alt="Blamensir" src="https://blamensir.neocities.org/banners/blamensir.png"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+</grid>
+
+<div class="cursorHub">
+<img class="cursorHubBG" src="./FrontPageVisu/ItsDangerous.jpg">
+<img class="cursor" id="sword" onclick="changeCursor()" src="./FrontPageVisu/Sword.png">
+</div>
+
+</aside>
+<!-- End of the right column Sidebar -->
+
+<footer class="footerBanner"><img src="./FrontPageVisu/BBJG_Footer75.png"></footer>
+</section>
+
+<script src="FrontPageFunction.js"></script>
+</body>
+
+</html>
