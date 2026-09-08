@@ -3,6 +3,7 @@
 <title>BaBaJaGeR</title>
 <head>
   <link rel="stylesheet" href="DarkTheme_BBJG.css">
+  <link rel="stylesheet" href="FrontPageStylesheet.css">
 </head>
 
 <body>
@@ -29,14 +30,17 @@
 
 <div class="mainContent"> <!-- Main content opening (1 columns) -->
   
+  <div id="bio">
+    <img id="profilPic" src="./FrontPageVisu/WaifuckornPP.jpg" style="width:150px">
+    <p>Hi, my name is <div id="pseudo"></div></p>
+    <br>
+    <p>I like <div id="hobby"></div></p>
+  </div> <!-- bio closing -->
+  
   <div id="imageRandomizer">
-    <div id="disclaimer" onclick="displayRandomImage();setInterval(srcRandomizer, 60);">Warning ! <br> By clicking this you'll start fast flashing images
+     <center><div id="disclaimer" onclick="displayRandomImage();setInterval(srcRandomizer, 80);">Warning ! <br> By clicking this you'll start fast flashing images
     </div>
-      <img id="randomImage" alt="Random image from the internet"  src="./Zine/123img/1.jpg">
-      <div id="randomImageButtonBox">
-        <div class="randomImageButton" onclick="clearInterval(srcRandomizer);"></div>
-        <div class="randomImageButton" onclick="setInterval(srcRandomizer, 60);"></div>
-      </div>
+     <img id="randomImage" alt="Random image from the internet"  src="./Zine/123img/1.jpg" onclick="displayRandomImage();stopRandomImage();"></center>
   </div> <!-- Image randomizer closing -->
 
 </div> <!--Main content closing -->
