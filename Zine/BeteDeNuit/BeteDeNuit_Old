@@ -1,0 +1,168 @@
+___________________ZINE BETE DE NUIT_________HTML_______________________________________________
+<!-- Zine Bête de nuit -->
+<center><div class="delimiter">Bête de nuit (2026)<canvas class="delimiterArrow" id="beteDeNuitArrow" onclick="displayBeteDeNuit()"></canvas>
+ <script> 
+  var c = document.getElementById("beteDeNuitArrow");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(0, 0);
+  ctx.lineTo(0, 110);
+  ctx.lineTo(200, 55);
+  ctx.closePath();
+  ctx.fillStyle="#191970"; /* MidnightBlue */
+  ctx.fill();
+  </script>
+   
+</div></center>
+
+<div class="grid-zine8" id="beteDeNuitZine">
+
+  <div id="Page1bdn" class="beteDeNuitText" style="visibility:visible">Première soirée dans la ville où vous venez d’emménager. Dans l’idée de vous fondre dans la foule et rencontrer du monde, vous hésitez entre vous rendre à <b class="beteDeNuitLien" onclick="visibilityP2bdn()">la taverne</b> ou partir explorer ce que <b class="beteDeNuitLien" onclick="visibilityP7bdn()">la maison close</b> a à offrir . Après tout, il s’agit là aussi de rencontre…</div>
+ 
+  <div id="Page2bdn" class="beteDeNuitText">Rien de bien spécial ici. La taverne ressemble à toutes celles que vous avez déjà fréquenté. Elle dispose de son lot de mauvaises fréquentations dans une épaisse fumée. Serez-vous tenté.e par son mystérieux <b class="beteDeNuitLien" onclick="visibilityP8bdn()">“Tord-Boyaux maison”</b> ou par votre boisson préférée : <b class="beteDeNuitLien" onclick="visibilityP12bdn()">la Citronnade</b> </div>
+  
+  <div id="Page3bdn" class="beteDeNuitText">Séparé du tumulte des orgies par d’épais rideaux, vous pénétrez chez l’oracle qui vous fait immédiatement part de ses inquiétudes vis-à-vis d’une mort iminente. Le croyez-vous et décidez d’aller visiter <b class="beteDeNuitLien" onclick="visibilityP6bdn()">le cimetière</b> demain ou laissez-vous tomber ce baratin pour <b class="beteDeNuitLien" onclick="visibilityP9bdn()">lui faire des avances</b> voyant bien que ses véritables talents sont ailleurs ?</div>
+  
+  <div id="Page4bdn" class="beteDeNuitText">Absolument pas décontenancé par ce breuvage aussi trouble que fort, vous lancez un impétueux “la petite soeur" au tenancier ! Malheureusement le deuxième bock ne se passe pas aussi bien et vous tombez ivre mort.e au sol à peine l’avoir fini…
+<br><b class="beteDeNuitLien" onclick="visibilityP1bdn()">Recommencer l'aventure</b></div>
+
+  <div id="Page5bdn" class="beteDeNuitText">Directement après votre arrivée devant la grange, vous êtes accueilli par un grondement puissant vous glaçant le sang et le cadavre pourrissant de ce qui semble être une grande dinde. Deux choix s’offrent à vous, une <b class="beteDenuitLien" onclick="visibilityP11bdn()">confrontation directe</b> ou une <b class="beteDeNuitLien" onclick="visibilityP14bdn()">approche plus discrète</b> et stratégique quitte à fuir si cela paraît trop dangereux</div>
+  
+  <div id="Page6bdn" class="beteDeNuitText">Vous vous réveillez tout groggy allongé sur le sol humide de rosée. En ouvrant les yeux vous voyez une tombe avec votre nom gravé dessus. Pris de panique vous la renversez, révélant ainsi un énorme rubis parmi ses débris. Vous êtes désormais riche et vous demandez comment tout dépenser en ville ce soir ! (et comment quitter cet étrange cimetière…)
+  <br><b class="beteDeNuitLien" onclick="visibilityP1bdn()">Recommencer l'aventure</b></div>
+  
+  <div id= "Page7bdn" class="beteDeNuitText">L’établissement tient ses promesses. Tout y inspire la volupté et ses recoins doux y encouragent le libertinage… Un seul élément ne semble pas être à sa place et vous attire : <b class="beteDeNuitLien" onclick="visibilityP3bdn()">une petite tente de voyant.e</b> au fond du hall, y aller vous ou préférez-vous ne pas changer vos plans initiaux et trouver de la compagnie pour <b class="beteDeNuitLien" onclick="visibilityP9bdn()">une nuit polissone</b> ?</div>
+  
+  <div id="Page8bdn" class="beteDeNuitText">Intrigué par cette requête, le tavernier vous interpelle en tendant la boisson : “J’y ai pas écrit xxx sur la carte pour rien, c’est de la mixture de costaud.e que j’ai là. Allez donc voir la personne qui traîne à la sortie, elle cherche des aventurier.es.” Vous <b class="beteDeNuitLien" onclick="visibilityP13bdn()">suivez ses conseils</b> ou <b class="beteDeNuitLien" onclick="visibilityP4bdn()">restez encore un peu au bar</b> ?</div>
+  
+  <div id="Page9bdn" class="beteDeNuitText">Vous ne regrettez pas ce choix tant cet.te partenaire est à votre goût. Ou bien est-ce juste son doigté précis don’t iel fait preuve qui donne cette impression ? En tout cas vous ressortez de cette entrevue avec l’esprit aussi libre que la bourse vide. Mais à peine dehors, <b class="beteDeNuitLien" onclick="visibilityP13bdn()">une silhouette vous interpelle…</b> </div>
+  
+  <div id="Page10bdn" class="beteDeNuitText">Refroidi par autant de danger vous refusez la mission. Mais le messager pensant que vous mentez pour garder tout le butin préfère vous mettre hors d’état de mener ce projet ou de divulguer les informations, vous plante sa lame dans l’abdomen et vous abandonne mourant.e sur les pavés. Augmentant ainsi le nombre d’infortuné.es englouti.es par l’avidité de la cité…
+  <br><b class="beteDeNuitLien" onclick="visibilityP1bdn()">Recommencer l'aventure</b> </div>
+  
+  <div id="Page11bdn" class="beteDeNuitText">Prenant votre courage à pleines mains, vous foncez dans l’obscurité de la grange avant d’être stoppé.é net par le déclenchement d’un piège à loup posé par le fermier. Esperons que vous vous viderez de votre sang avant que la bête de vienne vous dévorer vivant.e…
+  <br><b class="beteDeNuitLien" onclick="visibilityP1bdn()">Recommencer l'aventure</b> </div>
+  
+  <div id="Page12bdn" class="beteDeNuitText">Pas de doute, la recette de la citronnade est parfaitement maîtrisée ici ! De quoi satisfaire cette bonne petite soirée comme vous les aimez. Peut-être même parviendrez-vous à finir votre livre avant de vous coucher de bonne heure et être frai.che pour votre première journée avec la nouvelle équipe que vous intégrez demain !
+  <br><b class="beteDeNuitLien" onclick="visibilityP1bdn()">Recommencer l'aventure</b></div>
+  
+  <div id="Page13bdn" class="beteDeNuitText">Une ombre rôde effectivement aux abords du bâtiment et sans se présenter vous propose : “J’ai eu vent de source sûre qu’un fermier voisin a un problème de parasite dans sa grange, sa récompense couplée au gain que représente la capture d’une bête selon lui aussi mythique que dangereuse n’est pas des moindres…” <b class="beteDeNuitLien" onclick="visibilityP5bdn()">Vous en êtes</b> ou <b class="beteDeNuitLien" onclick="visibilityP10bdn()">vous vous débinez</b> </div>
+  
+  <div id="Page14bdn" class="beteDeNuitText">En contournant le bâtiment vous apercevez une ouverture et en scrutant à l’intérieur découvrez que le bruit vient en fait d’une portée de chatons ronronnants. Visiblement abandonnés vous les prenez avec vous pour les soigner et choyer. N’est-il pas meilleure récompense à votre acte de bravoure que ces nouveaux compagnons tout doux ?!
+  <br><b class="beteDeNuitLien" onclick="visibilityP1bdn()">Recommencer l'aventure</b> </div>
+
+</div><!-- fin Zine Bete de Nuit-->
+
+____________ZINE BETE DE NUIT__________________________JAVASCRIPT__________________________________
+
+/* BETE DE NUIT */
+function displayBeteDeNuit(){
+ const displayZine = document.getElementById('beteDeNuitZine');
+ if (displayZine.style.display.match("grid"))
+ {
+ displayZine.style.display='none';
+ }
+ else
+ {
+ displayZine.style.display='grid';
+ }
+}
+
+function visibilityP1bdn(){
+document.getElementById('Page1bdn').style.visibility='visible';
+document.getElementById('Page4bdn').style.visibility='hidden';
+document.getElementById('Page6bdn').style.visibility='hidden';
+document.getElementById('Page10bdn').style.visibility='hidden';
+document.getElementById('Page11bdn').style.visibility='hidden';
+document.getElementById('Page12bdn').style.visibility='hidden';
+document.getElementById('Page14bdn').style.visibility='hidden';
+}
+
+function visibilityP2bdn(){
+document.getElementById('Page2bdn').style.visibility='visible';
+document.getElementById('Page1bdn').style.visibility='hidden';
+}
+
+function visibilityP3bdn(){
+document.getElementById('Page3bdn').style.visibility='visible';
+document.getElementById('Page7bdn').style.visibility='hidden';
+}
+
+function visibilityP4bdn(){
+document.getElementById('Page4bdn').style.visibility='visible';
+document.getElementById('Page8bdn').style.visibility='hidden';
+}
+
+function visibilityP5bdn(){
+document.getElementById('Page5bdn').style.visibility='visible';
+document.getElementById('Page13bdn').style.visibility='hidden';
+}
+
+function visibilityP6bdn(){
+document.getElementById('Page6bdn').style.visibility='visible';
+document.getElementById('Page3bdn').style.visibility='hidden';
+}
+
+function visibilityP7bdn(){
+document.getElementById('Page7bdn').style.visibility='visible';
+document.getElementById('Page1bdn').style.visibility='hidden';
+}
+
+function visibilityP8bdn(){
+document.getElementById('Page8bdn').style.visibility='visible';
+document.getElementById('Page2bdn').style.visibility='hidden';
+}
+
+function visibilityP9bdn(){
+document.getElementById('Page9bdn').style.visibility='visible';
+document.getElementById('Page3bdn').style.visibility='hidden';
+document.getElementById('Page7bdn').style.visibility='hidden';
+}
+
+function visibilityP10bdn(){
+document.getElementById('Page10bdn').style.visibility='visible';
+document.getElementById('Page13bdn').style.visibility='hidden';
+}
+
+function visibilityP11bdn(){
+document.getElementById('Page11bdn').style.visibility='visible';
+document.getElementById('Page5bdn').style.visibility='hidden';
+}
+
+function visibilityP12bdn(){
+document.getElementById('Page12bdn').style.visibility='visible';
+document.getElementById('Page2bdn').style.visibility='hidden';
+}
+
+function visibilityP13bdn(){
+document.getElementById('Page13bdn').style.visibility='visible';
+document.getElementById('Page8bdn').style.visibility='hidden';
+document.getElementById('Page9bdn').style.visibility='hidden';
+}
+
+function visibilityP14bdn(){
+document.getElementById('Page14bdn').style.visibility='visible';
+document.getElementById('Page5bdn').style.visibility='hidden';
+}
+
+_____________CLOSING CROSS CANVAS SCRIPT______________________________________________
+  <canvas class="closingCross" id="musicCross" onclick="document.getElementById('diaryMusic').style.display='none'" height="30px" width="30px"></canvas>
+  <script>
+  var c = document.getElementById("musicCross");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(1, 7);
+  ctx.lineTo(9, 15);
+  ctx.lineTo(1, 23);
+  ctx.lineTo(7, 29);
+  ctx.lineTo(15, 21);
+  ctx.lineTo(23, 29);
+  ctx.lineTo(29, 23);
+  ctx.lineTo(21, 15);
+  ctx.lineTo(29, 7);
+  ctx.lineTo(23, 1);
+  ctx.lineTo(15, 9);
+  ctx.lineTo(7, 1);
+  ctx.closePath();
+  ctx.fillStyle="#191970"; /* MidnightBlue */
+  ctx.fill();
+  </script>
+  End of closing cross script -->
