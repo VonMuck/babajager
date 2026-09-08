@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>BaBaJaGeR's decklists</title>
+<head>
+  <link rel="stylesheet" href="../DarkTheme_BBJG.css">
+  <link rel="stylesheet" href="./MtGStylesheet.css">
+</head>
+
+<body>
+  <section class="homePageGrid">
+
+<div class="blank"><!--blank div left to the header--></div>
+  
+<center><header>
+  <a href="../BabaJager.html"><img class="HeaderImage" src="../FrontPageVisu/Header_BBJG.png" alt="Header image"></a>
+</header></center>
+
+<div class="blank"><!--blank div right to the header (end of the first row)--></div>
+
+<!-- Menu buttons -->
+<center><nav>
+  <button class="navButton" onclick="document.location='../Zine/BabaJagaZine.html'">Zines</button>
+  <button class="navButton" onclick="document.location='../WorldWideWeeb/WorldWideWeeb.html'">World Wide Weeb</button>
+  <button class="navButton">Unipopcorn</button>
+  <button class="navButton" onclick="document.location='../Diary/Diary.html'">Diary</button>
+  <button class="navButton" onclick="document.location='./MtG.html'">MtG</button></center>
+
+</nav>
+
+<div class="mainContent">
+	
+<div class="delimiter">EDH<canvas class="delimiterArrow" id="edhArrow" onclick="displayEDH()"></canvas>
+<script> 
+  var c = document.getElementById("edhArrow");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(0, 0);
+  ctx.lineTo(0, 110);
+  ctx.lineTo(200, 55);
+  ctx.closePath();
+  ctx.fillStyle="#191970"; /* MidnightBlue */
+  ctx.fill();
+  </script>
+  <script src="MtGFunction.js"></script>  
+</div>
+
+<div class="mtgFormat" id="EDH">
+<img alt="Muldrotha" title="Muldrotha, Oops all permanent" class="cz" src="./MtGVisu/MuldrothaPix.png"> <!-- style="position:relative;width:45%;rotate:-3deg;" -->
+<img alt="Hapatra" title="Hapatraggro" class="cz" src="./MtGVisu/HapatraPix.png"> <!-- style="width:34.5%;position:relative;right:185px;bottom:20px;rotate:8deg;" -->
+<img alt="Nethroi" title="Nethroi 0 power" class="cz" src="./MtGVisu/NethroiPix.png">
+<img alt="Brago" title="Infinite Brago" class="cz" src="./MtGVisu/BragoPix.png">
+</div>
+
+<div class="delimiter">Modern<canvas class="delimiterArrow" id="modernArrow" onclick="displayModern()"></canvas>
+<script> 
+  var c = document.getElementById("modernArrow");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(0, 0);
+  ctx.lineTo(0, 110);
+  ctx.lineTo(200, 55);
+  ctx.closePath();
+  ctx.fillStyle="#191970"; /* MidnightBlue */
+  ctx.fill();
+  </script>
+  <script src="MtGFunction.js"></script> 
+</div>
+
+<div class="mtgFormat" id="Modern">
+<img alt="Hollow one" title="MonoR H1" class="cz" src="./MtGVisu/H1Pix.png">
+</div>
+
+</div> <!-- Main content Closing -->
+
+
+<aside class="rightSidebar">
+
+<grid class="bannerDB">
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+</grid>
+
+</aside>
+
+<footer class="footerBanner"><img src="../FrontPageVisu/BBJG_Footer75.png"></footer>
+
+</section>
+
+</body>
+
+</html>
