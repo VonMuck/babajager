@@ -1,0 +1,47 @@
+.mainContentDiary{
+display:grid;
+grid-template-columns:49% 49%;
+align-items:start;
+gap:0.4%;
+}
+
+.diaryContainer{
+display:none;
+grid-template-columns:repeat(5, 1fr);
+width:97%;
+position:relative;
+align-items:start;
+background-color:#7B68EE; /*MediumSlateBlue*/
+justify-content:center;
+padding:1%;
+}
+
+.diaryContainer img{
+margin:4%;
+border:2px solid #FF69B4; /*HotPink*/
+}
+
+.diaryContainer img:hover{
+cursor:pointer;
+}
+
+.review{
+display:none;
+background:blue;
+margin:2%;
+border:2px solid grey;
+position:relative;
+left:-88px;
+z-index:99;
+margin-right:-88px;
+}
+
+#diaryMusic{
+background:url('./MusicVisu/dvd-cd.gif');
+background-size:cover;
+}
+
+#diaryVideoGames{
+background:url('./VGVisu/PS1background.jpg');
+background-size:cover;
+}

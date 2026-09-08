@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>BaBaJaGeR</title>
+<head>
+  <link rel="stylesheet" href="../DarkTheme_BBJG.css">
+  <link rel="stylesheet" href="./DiaryStylesheet.css">
+</head>
+
+<body>
+  <section class="homePageGrid"> <!-- Whole page section (3 columns 20 60 20) -->
+
+
+  
+<header>
+  <center><a href="../BabaJager.html"><img class="HeaderImage" src="../FrontPageVisu/Header_BBJG.png" alt="Header image"></a></center>
+</header>
+
+<!-- div containing everything in the left sidebar -->
+<aside class="leftSidebar">
+<!-- Menu buttons -->
+<nav>
+  <button class="navButton" onclick="document.location='../Zine/BabaJagaZine.html'">Zines</button>
+  <button class="navButton" onclick="document.location='../WorldWideWeeb/WorldWideWeeb.html'">World Wide Weeb</button>
+  <button class="navButton">Unipopcorn</button>
+  <button class="navButton" onclick="document.location='./Diary.html'">Diary</button>
+  <button class="navButton" onclick="document.location='../MtG/MtG.html'">MtG</button>
+</nav>
+
+</aside> <!-- left Sidebar closing-->
+
+<div class="mainContentDiary">
+
+<div class="mainContent"> <!-- First Main Column containig Music & Books -->
+
+<div class="delimiter">Music
+  <canvas class="delimiterArrow" id="musicArrow" onclick="displayMusic()"></canvas>
+  <script> 
+  var c = document.getElementById("musicArrow");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(0, 0);
+  ctx.lineTo(0, 110);
+  ctx.lineTo(200, 55);
+  ctx.closePath();
+  ctx.fillStyle="#191970"; /* MidnightBlue */
+  ctx.fill();
+  </script>
+</div>
+
+<div class="diaryContainer" id="diaryMusic">
+  <a href="https://ninajirachi.bandcamp.com/album/i-love-my-computer" target="_blank"><img src="./MusicVisu/Ninajirachi-ILoveMyComputer_Cover.jpg" title="Ninajirachi - I Love my Computer"></a>
+  <a href="https://fcukers.bandcamp.com/album/-" target="_blank"><img src="./MusicVisu/Fcukers-O_Cover.jpg"></a>  
+</div> <!-- Music diary closing -->
+
+<div class="delimiter">Books
+  <canvas class="delimiterArrow" id="booksArrow" onclick="displayBooks()"></canvas>
+  <script> 
+  var c = document.getElementById("booksArrow");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(0, 0);
+  ctx.lineTo(0, 110);
+  ctx.lineTo(200, 55);
+  ctx.closePath();
+  ctx.fillStyle="#191970"; /* MidnightBlue */
+  ctx.fill();
+  </script>
+</div>
+
+<div class="diaryContainer" id="diaryBooks">
+  <img alt="Rousse - Denis Infante" src="./BooksVisu/Rousse_88.png">
+  <img alt="Vampyre - Mauro Suehiro" src="./BooksVisu/Vampyre_88.png">
+  <img alt="Read me - Chelsea Manning" src="./BooksVisu/ReadMe_88.jpg">
+  <img alt="Record of a Spaceborn few - Becky Chambers" src="./BooksVisu/SpacebornFew_88.jpg">
+  <img alt="Justine - Sade" src="./BooksVisu/Justine_88.jpg">
+  <img alt="Crime and Punishment - Dostoievski" src="./BooksVisu/CrimePunishment_88.jpg">
+  <img alt="H2G2 - Douglas Adams" src="./BooksVisu/H2G2_88.jpg">
+</div> <!-- Books diary closing -->
+
+</div> <!-- First Main column closing -->
+
+<div class="mainContent"> <!-- Second main column containing VideoGames & Movies -->
+
+
+<div class="delimiter">Video Games
+  <canvas class="delimiterArrow" id="videogamesArrow" onclick="displayVideogames()"></canvas>
+  <script> 
+  var c = document.getElementById("videogamesArrow");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(0, 0);
+  ctx.lineTo(0, 110);
+  ctx.lineTo(200, 55);
+  ctx.closePath();
+  ctx.fillStyle="#191970"; /* MidnightBlue */
+  ctx.fill();
+  </script>
+</div>
+
+<div class="diaryContainer" id="diaryVideoGames">
+  <img alt="THPS2" src="./VGVisu/THPS2_88.png">  
+  <img alt="Scorn" src="./VGVisu/Scorn_88.png">
+  <img alt="blasphemous2" src="./VGVisu/Blasphemous2_88.png">
+  <img alt="Arc Raiders" src="./VGVisu/ArcRaiders_88.png">
+</div> <!-- Video game diary closing -->
+
+<div class="delimiter">Movies
+  <canvas class="delimiterArrow" id="moviesArrow" onclick="displayMovies()"></canvas>
+  <script> 
+  var c = document.getElementById("moviesArrow");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(0, 0);
+  ctx.lineTo(0, 110);
+  ctx.lineTo(200, 55);
+  ctx.closePath();
+  ctx.fillStyle="#191970"; /* MidnightBlue */
+  ctx.fill();
+  </script>
+</div>
+
+<div class="diaryContainer" id="diaryMovies">
+  <img alt="Project Hail Mary" src="./MoviesVisu/HailMary_88.png">
+</div>
+
+</div> <!-- Second Main Columns closing -->
+
+</div> <!-- Main content closing -->
+
+<!-- div containing everything in the right sidebar -->
+<aside class="rightSidebar">
+
+<grid class="bannerDB">
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a href="https://manon-chouette.neocities.org/" target="_blank"><img src="https://manon-chouette.neocities.org/manon-chouette-button.png"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+</grid>
+
+</aside>
+<!-- End of the right column Sidebar -->
+
+<footer class="footerBanner"><img src="../FrontPageVisu/BBJG_Footer75.png"></footer>
+</section>
+
+  <script src="DiaryFunction.js"></script>
+</body>
+
+</html>
