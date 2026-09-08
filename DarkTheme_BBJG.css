@@ -26,6 +26,152 @@ display:flex;
 flex-direction:column;
 }
 
+rightSidebar{
+display:flex;
+flex-direction:column;
+}
+
+nav{
+align-items:start;
+position:sticky;
+top:5px;
+}
+
+/* Menu buttons */
+.navButton{
+background-color:#FF69B4; /*HotPink*/
+width:97%;
+font-size:200%;
+color:#191970; /*MidnightBlue*/
+padding-top:0.4%;
+padding-bottom:0.4%;
+border-radius:10px;
+border:3px solid #dda0dd; /*Plum*/
+margin:1% 0% 1% 1%;
+}
+
+@keyframes navButtonAnimation{
+100%{transform:rotate(5deg);}
+}
+
+.navButton:hover{
+background-color:#dda0dd;
+cursor:pointer;
+animation-name:navButtonAnimation;
+animation-duration:0.2s;
+animation-fill-mode:forwards;
+}
+/* end of Menu buttons */
+
+.delimiter{
+background-color:#9FE2BF; /* Seafoam Green */
+font-size:200%;
+color:#191970; /*MidnightBlue*/
+border-radius:12px;
+border:3px solid #66CDAA; /*MediumAquaMarine*/
+text-align:center;
+width:99%;
+margin-top:1%;
+}
+
+.delimiterArrow{
+float:right;
+height:50px;
+width:30px;
+padding-top:0.3%;
+transform-origin:5px 20px;
+}
+
+@keyframes delimiterArrowRotate{
+100%{transform:rotate(90deg);}
+}
+
+.delimiterArrow:hover{
+cursor:pointer;
+animation-name:delimiterArrowRotate;
+animation-duration:0.3s;
+animation-fill-mode:forwards;
+}
+
+.closingCross{
+padding:1%;
+}
+
+
+@keyframes closingCrossScale{
+100%{transform:scale(85%);}
+}
+
+.closingCross:hover{
+cursor:pointer;
+animation-name:closingCrossScale;
+animation-duration:0.3s;
+animation-fill-mode:forwards;
+}
+
+/* Banners grid */
+.bannerDB{
+display:grid;
+background-color:#7B68EE; /*MediumSlateBlue*/
+grid-template-columns:repeat(4, 1fr);
+justify-content:center;
+padding:0.5%;
+}
+/* end of Banners grid */
+
+.cursorHub{
+position:relative;
+width:99%;
+}
+
+.cursorHubBG{
+width:99%;
+position:relative;
+}
+
+.cursor{
+position:absolute;
+width:6%;
+top:60%;
+left:46%;
+}
+
+.cursor:hover{
+cursor:pointer;
+}
+
+footer{
+grid-column:span 3;
+position:fixed;
+bottom:0;
+}.homePageGrid{
+display:grid;
+grid-template-columns:20% 60% 20%;
+background:url('./FrontPageVisu/IMG_1694.JPG');
+background-repeat:no-repeat;
+background-size:cover;
+padding-bottom:2000px;
+}
+
+header{
+grid-column:span 3;
+}
+
+.HeaderImage{
+margin:20px 0px;
+border-radius:45px;
+}
+
+leftSidebar{
+display:flex;
+flex-direction:column;
+}
+
+mainContent{
+display:flex;
+flex-direction:column;
+}
+
 
 #imageRandomizer{
 background:grey;
