@@ -1,0 +1,72 @@
+.grid-zine8{
+display:none;
+grid-template-columns:repeat(4, 1fr);
+/*grid-template-rows:50% 50%;*/
+width:99%;
+padding-top:0.4%;
+padding-bottom:0.4%;
+}
+
+.grid-zine16{
+display:none;
+grid-template-columns:repeat(8, 1fr);
+grid-template-rows:50% 50%;
+width:99%;
+padding-top:0.4%;
+padding-bottom:0.4%;
+}
+
+.page:hover{
+cursor:pointer;
+filter:brightness(95%);
+}
+/*Ajouter animation Rotate y-180deg*/
+
+#beteDeNuitZine{
+background:url('./BeteDeNuit/Map.jpg');
+background-size:cover;
+}
+
+.beteDeNuitText{
+visibility:hidden;
+background:#E5AA70;
+padding:0.2%;
+}
+
+.beteDeNuitLien:hover{
+cursor:pointer;
+color:blue;
+font-size:110%;
+}
+
+.grid-zine3{
+display:grid;
+grid-template-columns:25% 50% 25%;
+}
+
+.beteDeNuitText2{
+display:none;
+background:white;
+height:400px;
+}
+
+.BdNcover{
+background:url('./BeteDeNuit/BdN_Cover.png');
+background-size:cover;
+}
+
+.BdNpage{
+background:url('./BeteDeNuit/BdN_P1cite.png');
+background-size:cover;
+}
+
+.BdNIllus{
+height:400px;
+}
+
+#beteDeNuitZine2{
+display:none;
+flex-direction:row;
+height:400px;
+}
+

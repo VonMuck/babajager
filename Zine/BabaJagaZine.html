@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<head>
+
+<title>Baba JagaZine</title>
+
+<link rel="icon" type="image/x-icon" href="./Favisoinc.ico">
+<link rel="stylesheet" href="../DarkTheme_BBJG.css">
+<link rel="stylesheet" href="./ZineStylesheet.css">
+
+<body>
+  
+<section class="homePageGrid">
+
+<header>
+  <center><a href="../BabaJager.html"><img class="HeaderImage" src="../FrontPageVisu/Header_BBJG.png" alt="Header image"></a></center>
+</header>
+
+<!-- Menu buttons -->
+<center><nav>
+  <button class="navButton" onclick="document.location='./BabaJagaZine.html'">Zines</button>
+  <button class="navButton" onclick="document.location='../WorldWideWeeb/WorldWideWeeb.html'">World Wide Weeb</button>
+  <button class="navButton">Unipopcorn</button>
+  <button class="navButton" onclick="document.location='../Diary/Diary.html'">Diary</button>
+  <button class="navButton" onclick="document.location='../MtG/MtG.html'">MtG</button>
+</nav></center>
+
+<div class="mainContent">
+
+<div class="delimiter">Soinc Zine (2026)<canvas class="delimiterArrow" id="soincArrow" onclick="displaySoinc()"></canvas>
+ <script> 
+  var c = document.getElementById("soincArrow");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(0, 0);
+  ctx.lineTo(0, 110);
+  ctx.lineTo(200, 55);
+  ctx.closePath();
+  ctx.fillStyle="#191970"; /* MidnightBlue */
+  ctx.fill();
+  </script>
+</div>
+
+<!--GridZine8 : Soinc -->
+<div class="grid-zine8" id="soincZine">
+  <div class="page" onclick="changeSoinc()"><img id="soinc" src="./Soinc/BackSoinc.png" style="width:100%;height:100%;"></div>  
+  <div class="page" onclick="changeLaits()"><img id="laits" src="./Soinc/BackSoinc.png" style="width:100%;height:100%;"></div>
+  <div class="page" onclick="changeShwoad()"><img id="shwoad" src="./Soinc/BackSoinc.png" style="width:100%;height:100%;"></div>
+  <div class="page" onclick="changeElmerad()"><img id="elmerad" src="./Soinc/BackSoinc.png" style="width:100%;height:100%;"></div>
+  <div class="page" onclick="changeKneckl()"><img id="kneckl" src="./Soinc/BackSoinc.png" style="width:100%;height:100%;"></div>
+  <div class="page" onclick="changeMya()"><img id="mya" src="./Soinc/BackSoinc.png"     style="width:100%;height:100%;"></div>
+  <div class="page" onclick="changeVertoc()"><img id="vertoc" src="./Soinc/BackSoinc.png" style="width:100%;height:100%;"></div>
+  <div class="page" onclick="changeEgmang()"><img id="egmang" src="./Soinc/BackSoinc.png" style="width:100%;height:100%;"></div>
+     
+</div>
+<!-- Fin GridZine Soinc -->
+
+<div class="delimiter">Bête de nuit (2026)<canvas class="delimiterArrow" id="beteDeNuit2Arrow" onclick="displayBeteDeNuit2()"></canvas>
+ <script> 
+  var c = document.getElementById("beteDeNuit2Arrow");
+  var ctx = c.getContext("2d");
+  ctx.moveTo(0, 0);
+  ctx.lineTo(0, 110);
+  ctx.lineTo(200, 55);
+  ctx.closePath();
+  ctx.fillStyle="#191970"; /* MidnightBlue */
+  ctx.fill();
+  </script>   
+</div>
+
+<div class="grid-zine3" id="beteDeNuitZine2">
+<!-- Cover à Gauche -->
+  <div class="BdNcover"></div> 
+
+<!-- Texte qui change -->
+  <div id="BdNp1" class="beteDeNuitText2" style="display:inline">Première soirée dans la ville où vous venez d’emménager. Dans l’idée de vous fondre dans la foule et rencontrer du monde, vous hésitez entre vous rendre à <b class="beteDeNuitLien" onclick="displayBdNp2()">la taverne</b> ou partir explorer ce que <b class="beteDeNuitLien" onclick="displayBdNp7()">la maison close</b> a à offrir . Après tout, il s’agit là aussi de rencontre…</div>
+
+  <div id="BdNp2" class="beteDeNuitText2">Rien de bien spécial ici. La taverne ressemble à toutes celles que vous avez déjà fréquenté. Elle dispose de son lot de mauvaises fréquentations dans une épaisse fumée. Serez-vous tenté.e par son mystérieux <b class="beteDeNuitLien" onclick="displayBdNp8()">“Tord-Boyaux maison”</b> ou par votre boisson préférée : <b class="beteDeNuitLien" onclick="displayBdNp12()">la Citronnade</b></div>
+
+  <div id="BdNp3" class="beteDeNuitText2">Séparé du tumulte des orgies par d’épais rideaux, vous pénétrez chez l’oracle qui vous fait immédiatement part de ses inquiétudes vis-à-vis d’une mort iminente. Le croyez-vous et décidez d’aller visiter <b class="beteDeNuitLien" onclick="displayBdNp6()">le cimetière</b> demain ou laissez-vous tomber ce baratin pour <b class="beteDeNuitLien" onclick="displayBdNp9()">lui faire des avances</b> voyant bien que ses véritables talents sont ailleurs ?</div>
+
+  <div id="BdNp4" class="beteDeNuitText2">Absolument pas décontenancé par ce breuvage aussi trouble que fort, vous lancez un impétueux “la petite soeur" au tenancier ! Malheureusement le deuxième bock ne se passe pas aussi bien et vous tombez ivre mort.e au sol à peine l’avoir fini…
+  <br><b class="beteDeNuitLien" onclick="displayBdNp1()">Recommencer l'aventure</b></div>
+
+  <div id="BdNp5" class="beteDeNuitText2">Directement après votre arrivée devant la grange, vous êtes accueilli par un grondement puissant vous glaçant le sang et le cadavre pourrissant de ce qui semble être une grande dinde. Deux choix s’offrent à vous, une <b class="beteDeNuitLien" onclick="displayBdNp11()">confrontation directe</b> ou une <b class="beteDeNuitLien" onclick="displayBdNp14()">approche plus discrète</b> et stratégique quitte à fuir si cela paraît trop dangereux</div>
+
+  <div id="BdNp6" class="beteDeNuitText2">Vous vous réveillez tout groggy allongé sur le sol humide de rosée. En ouvrant les yeux vous voyez une tombe avec votre nom gravé dessus. Pris de panique vous la renversez, révélant ainsi un énorme rubis parmi ses débris. Vous êtes désormais riche et vous demandez comment tout dépenser en ville ce soir ! (et comment quitter cet étrange cimetière…)
+  <br><b class="beteDeNuitLien" onclick="displayBdNp1()">Recommencer l'aventure</b></div>
+  
+  <div id= "BdNp7" class="beteDeNuitText2">L’établissement tient ses promesses. Tout y inspire la volupté et ses recoins doux y encouragent le libertinage… Un seul élément ne semble pas être à sa place et vous attire : <b class="beteDeNuitLien" onclick="displayBdNp3()">une petite tente de voyant.e</b> au fond du hall, y aller vous ou préférez-vous ne pas changer vos plans initiaux et trouver de la compagnie pour <b class="beteDeNuitLien" onclick="displayBdNp9()">une nuit polissone</b> ?</div>
+  
+  <div id="BdNp8" class="beteDeNuitText2">Intrigué par cette requête, le tavernier vous interpelle en tendant la boisson : “J’y ai pas écrit xxx sur la carte pour rien, c’est de la mixture de costaud.e que j’ai là. Allez donc voir la personne qui traîne à la sortie, elle cherche des aventurier.es.” Vous <b class="beteDeNuitLien" onclick="displayBdNp13()">suivez ses conseils</b> ou <b class="beteDeNuitLien" onclick="displayBdNp4()">restez encore un peu au bar</b> ?</div>
+  
+  <div id="BdNp9" class="beteDeNuitText2">Vous ne regrettez pas ce choix tant cet.te partenaire est à votre goût. Ou bien est-ce juste son doigté précis don’t iel fait preuve qui donne cette impression ? En tout cas vous ressortez de cette entrevue avec l’esprit aussi libre que la bourse vide. Mais à peine dehors, <b class="beteDeNuitLien" onclick="displayBdNp13()">une silhouette vous interpelle…</b></div>
+  
+   <div id="BdNp10" class="beteDeNuitText2">Refroidi par autant de danger vous refusez la mission. Mais le messager pensant que vous mentez pour garder tout le butin préfère vous mettre hors d’état de mener ce projet ou de divulguer les informations, vous plante sa lame dans l’abdomen et vous abandonne mourant.e sur les pavés. Augmentant ainsi le nombre d’infortuné.es englouti.es par l’avidité de la cité…
+  <br><b class="beteDeNuitLien" onclick="displayBdNp1()">Recommencer l'aventure</b> </div>
+  
+  <div id="BdNp11" class="beteDeNuitText2">Prenant votre courage à pleines mains, vous foncez dans l’obscurité de la grange avant d’être stoppé.é net par le déclenchement d’un piège à loup posé par le fermier. Esperons que vous vous viderez de votre sang avant que la bête de vienne vous dévorer vivant.e…
+  <br><b class="beteDeNuitLien" onclick="displayBdNp1()">Recommencer l'aventure</b></div>
+  
+  <div id="BdNp12" class="beteDeNuitText2">Pas de doute, la recette de la citronnade est parfaitement maîtrisée ici ! De quoi satisfaire cette bonne petite soirée comme vous les aimez. Peut-être même parviendrez-vous à finir votre livre avant de vous coucher de bonne heure et être frai.che pour votre première journée avec la nouvelle équipe que vous intégrez demain !
+  <br><b class="beteDeNuitLien" onclick="displayBdNp1()">Recommencer l'aventure</b></div>
+  
+  <div id="BdNp13" class="beteDeNuitText2">Une ombre rôde effectivement aux abords du bâtiment et sans se présenter vous propose : “J’ai eu vent de source sûre qu’un fermier voisin a un problème de parasite dans sa grange, sa récompense couplée au gain que représente la capture d’une bête selon lui aussi mythique que dangereuse n’est pas des moindres…” <b class="beteDeNuitLien" onclick="displayBdNp5()">Vous en êtes</b> ou <b class="beteDeNuitLien" onclick="displayBdNp10()">vous vous débinez</b></div>
+  
+  <div id="BdNp14" class="beteDeNuitText2">En contournant le bâtiment vous apercevez une ouverture et en scrutant à l’intérieur découvrez que le bruit vient en fait d’une portée de chatons ronronnants. Visiblement abandonnés vous les prenez avec vous pour les soigner et choyer. N’est-il pas meilleure récompense à votre acte de bravoure que ces nouveaux compagnons tout doux ?!
+  <br><b class="beteDeNuitLien" onclick="displayBdNp1()">Recommencer l'aventure</b></div>
+  
+  <!-- Page d'illustration de droite qui change -->
+  <img id="BdNCurrentPage" class="BdNIllus" src="./BeteDeNuit/BdN_P1cite.png">
+
+</div> <!-- Fin Bete de Nuit 2 -->
+
+</div> <!-- mainContent closing -->
+
+
+<!-- div containing everything in the right sidebar -->
+<aside class="rightSidebar">
+
+<grid class="bannerDB">
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+  <a class="banner" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+</grid>
+
+</aside>
+<!-- End of the right column Sidebar -->
+
+<footer><img src="../FrontPageVisu/BBJG_Footer75.png"></footer>
+
+</section>
+
+<script src="SoincFunction.js"></script> 
+</body>
+</head>
+
