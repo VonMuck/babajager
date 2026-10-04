@@ -1,0 +1,9 @@
+.upcContainer{
+display:none;
+width:97%;
+position:relative;
+align-items:start;
+background-color:#7B68EE; /*MediumSlateBlue*/
+justify-content:center;
+padding:1%;
+}
