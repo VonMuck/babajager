@@ -4,7 +4,7 @@ function changeCursor(){
   {
   cursorImage.src="./FrontPageVisu/DefaultCursor.png";
   document.body.style.cursor="url('./FrontPageVisu/SwordCursor.cur'), default";
-  document.body.style.cursor.pointer="url('./FrontPageVisu/FairyCursor.cur'), pointer";
+  document.body.style.pointer="url('./FrontPageVisu/FairyCursor.cur'), pointer";
   }
   else
   {
@@ -13,70 +13,40 @@ function changeCursor(){
   }
 } 
 
+
+
 function displayRandomImage(){
 const disclaimer=document.getElementById('disclaimer');
 const randomImage=document.getElementById('randomImage');
-if (randomImage.style.display.match('block'))
-{
-randomImage.style.display='none';
-disclaimer.style.display='block';
-}
-else
-{
-disclaimer.style.display='none';
-randomImage.style.display='block';
-}
-}
-
-function srcRandomizer(){
-let x = Math.floor((Math.random()*46)+1);
-let randomSource = "./Zine/123img/" + x + ".jpg";
-document.getElementById('randomImage').src = randomSource;
-}
-
-/* https://stackoverflow.com/questions/4564251/change-the-mouse-pointer-using-javascript */
-/* function changeCursor(){
-document.getElementsByTagName("body")[0].style.cursor="url('./FrontPageVisu/SwordCursor.cur'), default";
-} */
-
-/* var elementToChange=document.getElementsByTagName("homePageGrid")[0];
-elementToChange.style.cursor="url('./FrontPageVisu/SwordCursor.cur'), default"; */
-function changeCursor(){
-  const cursorImage=document.getElementById('sword');
-  if (cursorImage.src.match("Sword"))
+  if (randomImage.style.display.match('block'))
   {
-  cursorImage.src="./FrontPageVisu/DefaultCursor.png";
-  document.body.style.cursor="url('./FrontPageVisu/SwordCursor.cur'), default";
-  document.body.style.cursor.pointer="url('./FrontPageVisu/FairyCursor.cur'), pointer";
+  randomImage.style.display='none';
+  disclaimer.style.display='block';
   }
   else
   {
-  cursorImage.src="./FrontPageVisu/Sword.png";
-  document.body.style.cursor="default";
+  disclaimer.style.display='none';
+  randomImage.style.display='block';
   }
-} 
+}
 
-function displayRandomImage(){
-const disclaimer=document.getElementById('disclaimer');
-const randomImage=document.getElementById('randomImage');
-if (randomImage.style.display.match('block'))
-{
-randomImage.style.display='none';
-disclaimer.style.display='block';
-}
-else
-{
-disclaimer.style.display='none';
-randomImage.style.display='block';
-}
+let randomizerSpeed;
+function startRandomizer(){
+  if (!randomizerSpeed){
+  randomizerSpeed = setInterval(srcRandomizer, 80);
+  }
+  else{
+  clearInterval(randomizerSpeed);
+  randomizerSpeed = undefined;
+  }
 }
 
 function srcRandomizer(){
-let x = Math.floor((Math.random()*47)+1);
-let randomSource = "./Zine/123img/" + x + ".jpg";
-console.log(randomSource);
+let srcNumber = Math.floor((Math.random()*45)+1);
+let randomSource = "./Zine/123img/" + srcNumber + ".jpg";
 document.getElementById('randomImage').src = randomSource;
 }
+
 
 /* https://stackoverflow.com/questions/4564251/change-the-mouse-pointer-using-javascript */
 /* function changeCursor(){
@@ -85,4 +55,3 @@ document.getElementsByTagName("body")[0].style.cursor="url('./FrontPageVisu/Swor
 
 /* var elementToChange=document.getElementsByTagName("homePageGrid")[0];
 elementToChange.style.cursor="url('./FrontPageVisu/SwordCursor.cur'), default"; */
-
