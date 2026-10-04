@@ -16,13 +16,44 @@ justify-content:center;
 padding:1%;
 }
 
-.diaryContainer img{
+.diaryContent{
+position:relative;
 margin:4%;
-border:2px solid #FF69B4; /*HotPink*/
+border:1px solid #FF69B4; /*HotPink*/
+width:88px;
+height:88px;
 }
 
-.diaryContainer img:hover{
-cursor:pointer;
+.diaryContent p{
+zoom:25%;
+margin:0%;
+padding:2%;
+text-align:justify;
+line-height:120%;
+background-color: rgba(255, 255, 255, 0.55);
+/* text-shadow:
+1px 0px  white, 
+-1px 0px  white, 
+0px 1px  white, 
+0px -1px  white;
+/* -webkit-text-fill-color:black; 
+-webkit-text-stroke:1px white; */
+}
+
+.diaryLink{
+text-align:bottom;
+}
+
+.diaryContent:hover{
+z-index:99;
+animation-name:diaryContentExpand;
+animation-duration:0.4s;
+animation-fill-mode:forwards;
+-webkit-backdrop-filter:blur(5px);
+}
+
+@keyframes diaryContentExpand{
+100%{transform:scale(700%);}
 }
 
 .review{
@@ -42,6 +73,11 @@ background-size:cover;
 }
 
 #diaryVideoGames{
-background:url('./VGVisu/PS1background.jpg');
+background:url('./VGVisu/PS1startup.gif');
+background-size:cover;
+}
+
+#diaryMovies{
+background:url('./MoviesVisu/godzilla-jumping.gif');
 background-size:cover;
 }
