@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="FrontPageStylesheet.css">
 </head>
 
-<body>
+<body onload="setInterval(randomProfilPic, 2500); setInterval(randomPseudo, 1900); setInterval(randomLike, 1600); setInterval(randomDislike, 1200);">
   <section class="homePageGrid"> <!-- Whole page section (3 columns 20 60 20) -->
 
 
@@ -21,7 +21,7 @@
 <nav>
   <button class="navButton" onclick="document.location='./Zine/BabaJagaZine.html'">Zines</button>
   <button class="navButton" onclick="document.location='./WorldWideWeeb/WorldWideWeeb.html'">World Wide Weeb</button>
-  <button class="navButton">Unipopcorn</button>
+  <button class="navButton" onclick="document.location='./Unipopcorn/Unipopcorn.html'">Unipopcorn</button>
   <button class="navButton" onclick="document.location='./Diary/Diary.html'">Diary</button>
   <button class="navButton" onclick="document.location='./MtG/MtG.html'">MtG</button>
 </nav>
@@ -31,16 +31,16 @@
 <div class="mainContent"> <!-- Main content opening (1 columns) -->
   
   <div id="bio">
-    <img id="profilPic" src="./FrontPageVisu/WaifuckornPP.jpg">
-    <p>Hi, my name is <div id="pseudo"></div></p>
-    <br>
-    <p>I like <div id="hobby"></div></p>
+    <img id="profilPic" src="./FrontPageVisu/PP/WaifuckornPP.jpg">
+    <p>Hi, my name is <br><b id="pseudo"></b></p>
+    <p>I like <br><b id="like"></b></p>
+    <p>I don't like <br><b id="dislike"></b></p>
   </div> <!-- bio closing -->
   
   <div id="imageRandomizer">
-     <center><div id="disclaimer" onclick="displayRandomImage();setInterval(srcRandomizer, 80);">Warning ! <br> By clicking this you'll start fast flashing images
+     <center><div id="disclaimer" onclick="displayRandomImage(); startRandomizer();">Warning ! <br> By clicking this you'll start fast flashing images
     </div>
-     <img id="randomImage" alt="Random image from the internet"  src="./Zine/123img/1.jpg" onclick="displayRandomImage();stopRandomImage();"></center>
+     <img id="randomImage" alt="Random image from the internet"  src="./Zine/123img/1.jpg" onclick="startRandomizer();"></center>
   </div> <!-- Image randomizer closing -->
 
 </div> <!--Main content closing -->
@@ -75,6 +75,7 @@
 </section>
 
 <script src="FrontPageFunction.js"></script>
+<script src="Bio.js"></script>
 </body>
 
 </html>
