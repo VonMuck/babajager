@@ -302,7 +302,6 @@ animation-fill-mode:forwards;
 /* Banners grid */
 .bannerDB{
 display:inline;
-flex-direction:rows;
 background-color:#7B68EE; /*MediumSlateBlue*/
 padding:0.5%;
 }
