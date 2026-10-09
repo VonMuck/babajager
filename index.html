@@ -4,6 +4,12 @@
 <head>
   <link rel="stylesheet" href="DarkTheme_BBJG.css">
   <link rel="stylesheet" href="FrontPageStylesheet.css">
+   <style>
+    @font-face{
+     font-family:Melbo;
+     src:url('./FrontPageVisu/Melbo.ttf');
+    }
+  </style>
 </head>
 
 <body onload="setInterval(randomProfilPic, 2500); setInterval(randomPseudo, 1900); setInterval(randomLike, 1600); setInterval(randomDislike, 1200);">
@@ -32,9 +38,9 @@
   
   <div id="bio">
     <img id="profilPic" src="./FrontPageVisu/PP/WaifuckornPP.jpg">
-    <p>Hi, my name is <br><b id="pseudo"></b></p>
-    <p>I like <br><b id="like"></b></p>
-    <p>I don't like <br><b id="dislike"></b></p>
+    <h6 id="pseudo"></h6>
+    <h6 id="like"></h6>
+    <p id="dislike"></h6>
   </div> <!-- bio closing -->
   
   <div id="imageRandomizer">
