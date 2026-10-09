@@ -1,9 +1,9 @@
 #bio{
 max-width:620px;
-max-height:400px;
+max-height:345px;
 background-image:url('./FrontPageVisu/Hello.png');
 border-radius:20px;
-border:3px solid #dda0dd; /*Plum*/
+border:3px solid #b40c03;
 margin:1%;
 }
 
@@ -22,24 +22,25 @@ font-family:Melbo, Brush Script MT, cursive;
 
 #pseudo{
 position:relative;
-font-size:500%;
-top:-35px;
+font-size:550%;
+top:-80px;
 text-align:center;
 margin-bottom:0px;
+transform:rotate(-4deg);
 }
 
 #like{
 position:relative;
-top:-30px;
-left:18%;
-font-size:220%;
+top:-115px;
+left:15%;
+font-size:250%;
 }
 
 #dislike{
 position:relative;
-top:-150px;
-left:65%;
-font-size:220%;
+top:-255px;
+left:62%;
+font-size:250%;
 }
 
 #imageRandomizer{
