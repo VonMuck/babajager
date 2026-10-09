@@ -10,9 +10,10 @@ margin:1%;
 #profilPic{
 position:relative;
 float:left;
-max-width:150px;
+max-width:125px;
 border-radius:50%;
-margin:2%;
+margin-top:1.5%;
+margin-left:2%;
 }
 
 h6{
