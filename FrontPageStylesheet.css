@@ -1,8 +1,8 @@
 #bio{
-width:33%;
-min-height:170px;
-background:#9FE2BF; /* Seafoam Green */
-border-radius:5px;
+max-width:620px;
+max-height:400px;
+background-image:url('./FrontPageVisu/Hello.png');
+border-radius:20px;
 border:3px solid #dda0dd; /*Plum*/
 margin:1%;
 }
