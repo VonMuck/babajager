@@ -15,6 +15,32 @@ border-radius:50%;
 margin:2%;
 }
 
+h6{
+font-family:Melbo, Brush Script MT, cursive;
+}
+
+#pseudo{
+position:relative;
+font-size:500%;
+top:-35px;
+text-align:center;
+margin-bottom:0px;
+}
+
+#like{
+position:relative;
+top:-30px;
+left:18%;
+font-size:220%;
+}
+
+#dislike{
+position:relative;
+top:-150px;
+left:65%;
+font-size:220%;
+}
+
 #imageRandomizer{
 background:#9FE2BF; /* Seafoam Green */
 height:400px;
