@@ -1,24 +1,21 @@
-const pseudoArray = ["BabaJager", "VonMuck", "Muckus",  "Shayulin", "Unipopcorn", "Mimic Mathy", "Ugin Agaz", "UwU"];
+const pseudoArray = ["BabaJager", "VonMuck", "Muckus", "Shayulin", "Unipopcorn", "Mimic Mathy", "Ugin Agaz", "UwU", "Ecchi Mochi"];
 document.getElementById('pseudo').innerHTML = pseudoArray[0];
-function pseudoTimer(){
-setInterval(randomPseudo, 1200);
-}
 function randomPseudo(){
-let pseudoNumber = Math.floor((Math.random()*8));
+let pseudoNumber = Math.floor((Math.random()*9));
 document.getElementById('pseudo').innerHTML = pseudoArray[pseudoNumber];
 }
 
-const likeArray = ["B-movies", "Kendama", "Crawling Dungeon", "Fast Electronic Music", "TCG", "Retro Gaming", "Parties"]
+const likeArray = ["B-movies", "Kendama", "Fast Music", "TCG", "Retro Gaming", "Parties"]
 document.getElementById('like').innerHTML = likeArray[0];
 function randomLike(){
-let likeNumber = Math.floor((Math.random()*7));
+let likeNumber = Math.floor((Math.random()*6));
 document.getElementById('like').innerHTML = likeArray[likeNumber];
 }
 
-const dislikeArray = ["Lychee", "Blue", "Reggae", "Capitalism"]
+const dislikeArray = ["Lychee", "Blue", "Reggae", "Capitalism", "Summer"]
 document.getElementById('dislike').innerHTML = dislikeArray[0];
 function randomDislike(){
-let dislikeNumber = Math.floor((Math.random()*4));
+let dislikeNumber = Math.floor((Math.random()*5));
 document.getElementById('dislike').innerHTML = dislikeArray[dislikeNumber];
 }
 
