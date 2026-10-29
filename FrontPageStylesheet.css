@@ -31,15 +31,18 @@ transform:rotate(-4deg);
 
 #like{
 position:relative;
+max-width:304px;
 top:-115px;
-left:15%;
+text-align:center;
 font-size:250%;
 }
 
 #dislike{
 position:relative;
+max-width:304px;
 top:-255px;
-left:62%;
+left:310px;
+text-align:center;
 font-size:250%;
 }
 
@@ -54,20 +57,30 @@ padding:2%;
 
 #disclaimer{
 display:block;
-background:white;
-height:350px;
-width:350px;
+background-image:url('./Zine/123img/FireBorder.gif');
+background-size:400px 400px;
+background-repeat:no-repeat;
+height:400px;
+width:400px;
 border-radius:5px;
 border:3px solid #dda0dd; /*Plum*/
 text-align:center;
 cursor:pointer;
+text-align:center;
+vertical-align:center;
+}
+
+#warning{
+position:relative;
+background-color:white;
+top:140px;
 }
 
 #randomImage{
 display:none;
 cursor:pointer;
-height:350px;
-width:350px;
+height:400px;
+width:400px;
 border-radius:5px;
 border:3px solid #dda0dd; /*Plum*/
 }
