@@ -110,8 +110,29 @@ animation-fill-mode:forwards;
 }
 
 /* Banners grid */
+/* Banner Grid */
+
+#bannerTop{
+position:relative;
+z-index:2;
+width:370px;
+}
+
+#bannerTitle{
+font-family:Drip, Brush Script MT, cursive;
+font-size:350%;
+position:relative;
+z-index:3;
+top:-73px;
+letter-spacing:2px;
+text-align-last:center;
+transform:rotate(4deg);
+color:#fe0000;
+margin-bottom:-132px;
+}
+
 .bannerGrid{
-width:77%;
+width:74%;
 border:44px solid transparent;
 border-image:url('./FrontPageVisu/BannerDB/FloppyBorder.png') 44 round;
 border-image-slice:44 fill;
@@ -120,8 +141,12 @@ margin-bottom:5%;
 
 #bannerLink{
 position:relative;
-left:35px;
+left:13px;
 top:15px;
+}
+
+#bannerLink img{
+max-width:82px;
 }
 /* end of Banners grid */
 
